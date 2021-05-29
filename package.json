@@ -3,6 +3,8 @@
   "devDependencies": {
     "lerna": "^4.0.0"
   },
+  "license": "MIT",
+  "private": true,
   "scripts": {
     "netlify": "yarn bootstrap && yarn build",
     "build": "cd packages/furo && yarn build && cd ../example && yarn build",
