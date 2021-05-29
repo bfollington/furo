@@ -85,6 +85,39 @@ See the [full example](https://github.com/bfollington/furo/tree/master/packages/
 
 You can also [view the live demo](https://furo.netlify.app/).
 
+# History Tracking
+
+**Furō** features a built-in history tracker. This can be enabled and disabled via a boolean supplied to `createBus()`. 
+
+You can see visualise which events precipitated one another in a tree format, including the payload of each event. The [full example](https://github.com/bfollington/furo/tree/master/packages/example) has a reference usage of `<HistoryDebugger />`. 
+
+```
+click::9
+{}
+
+  → inc::10
+    {"amount":1}
+  
+  → fetch-trending::11
+    {"language":"clojure"}
+  
+      → retrieved-trending::12
+        {"repos":["tonsky/FiraCode","metabase/metabase","LightTable/LightTable", ...]}
+
+click::13
+{}
+
+  → inc::14
+    {"amount":1}
+
+  → fetch-trending::15
+    {"language":"haskell"}
+
+      → retrieved-trending::16
+        {"repos":["koalaman/shellcheck","jgm/pandoc","hasura/graphql-engine", ...]}
+
+```
+
 # Setup
 
 // TODO
