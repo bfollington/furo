@@ -1,6 +1,6 @@
 
 
-<a href=""><img src="https://raw.githubusercontent.com/bfollington/furo/master/banner.png" /></a>
+<a href=""><img src="https://i.imgur.com/3ajGxyH.png" /></a>
 <p align="center">An event bus for React</p>
 <br />
 
@@ -15,7 +15,7 @@
 
 </p><br>
 
-<p align="center">**Furō** is a simple but powerful messaging layer for `React` applications. It can be used to tame complex asynchronous workflows and preserve sanity.
+<p align="center"><strong>Furō</strong> is a simple but powerful messaging layer for <code>React</code> applications. It can be used to tame complex asynchronous workflows and preserve sanity.
 
 [👁 &nbsp;Live Demo](https://furo.netlify.app/) (source in `packages/example`)
 
@@ -81,11 +81,9 @@ yarn add @twopm/furo
   }
 ```
 
-# Installation
+See the [full example](https://github.com/bfollington/furo/tree/master/packages/example) for more detail. 
 
-```
-yarn add @twopm/furo
-```
+You can also [view the live demo](https://furo.netlify.app/).
 
 # Setup
 
