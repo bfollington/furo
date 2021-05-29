@@ -16,7 +16,7 @@
 
 <p align="center"><strong>Furō</strong> is a simple but powerful messaging layer for <code>React</code> applications. It can be used to tame complex asynchronous workflows and preserve sanity.
   
-<p align="center"><a href="https://restack.netlify.app/">👁 &nbsp;Live Demo</a><br> (source in <code>packages/example</code>)</p>
+<p align="center"><a href="https://furo.netlify.app/">👁 &nbsp;Live Demo</a><br> (source in <code>packages/example</code>)</p>
 
 # Installation
 ```
@@ -88,7 +88,7 @@ You can also [view the live demo](https://furo.netlify.app/).
 
 **Furō** features a built-in history tracker. This can be enabled and disabled via a boolean supplied to `createBus()`. 
 
-You can see visualise which events precipitated one another in a tree format, including the payload of each event. The [full example](https://github.com/bfollington/furo/tree/master/packages/example) has a reference usage of `<HistoryDebugger />`. 
+You can visualise which events precipitated one another in a tree format, including the payload of each event. The [full example](https://github.com/bfollington/furo/tree/master/packages/example) has a reference usage of `<HistoryDebugger />`. 
 
 ```
 click::9
