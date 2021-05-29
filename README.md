@@ -121,6 +121,8 @@ click::13
 
 // TODO
 
+For now, copy the [example](https://github.com/bfollington/furo/tree/master/packages/example).
+
 ## Running this repo
 
 ### Bootstrap
