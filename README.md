@@ -15,6 +15,15 @@
 
 [👁 &nbsp;Live Demo](https://furo.netlify.app/) (source in `packages/example`)
 
+# Installation
+```
+npm i @twopm/furo
+```
+
+```
+yarn add @twopm/furo
+```
+
 # Simple Example
 
 ```tsx
