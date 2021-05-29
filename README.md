@@ -1,6 +1,6 @@
 
 
-<a href=""><img src="https://raw.githubusercontent.com/bfollington/furo/master/hero.png" /></a>
+<a href=""><img src="https://raw.githubusercontent.com/bfollington/furo/master/banner.png" /></a>
 <p align="center">An event bus for React</p>
 <br />
 
