@@ -1,4 +1,8 @@
-<h1 align="center">furō</h1>
+
+
+<a href=""><img src="https://raw.githubusercontent.com/bfollington/furo/master/hero.png" /></a>
+<p align="center">An event bus for React</p>
+<br />
 
 <p align="center">
   <a href="https://github.com/bfollington/furo/actions?query=workflow%3A%22Build%22"><img alt="Build" src="https://github.com/bfollington/furo/workflows/Build/badge.svg"></a>
@@ -11,7 +15,7 @@
 
 </p><br>
 
-**Furō** is an event bus for `React` applications. It can be used to tame complex asynchronous workflows.
+<p align="center">**Furō** is a simple but powerful messaging layer for `React` applications. It can be used to tame complex asynchronous workflows and preserve sanity.
 
 [👁 &nbsp;Live Demo](https://furo.netlify.app/) (source in `packages/example`)
 
