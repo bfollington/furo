@@ -1,4 +1,4 @@
-<h1 align="center">furo</h1>
+<h1 align="center">furō</h1>
 
 <p align="center">
   <a href="https://github.com/bfollington/furo/actions?query=workflow%3A%22Build%22"><img alt="Build" src="https://github.com/bfollington/furo/workflows/Build/badge.svg"></a>
@@ -12,6 +12,8 @@
 </p><br>
 
 **Furō** is an event bus for `React` applications. It can be used to tame complex asynchronous workflows.
+
+[👁 &nbsp;Live Demo](https://furo.netlify.app/) (source in `packages/example`)
 
 # Simple Example
 
