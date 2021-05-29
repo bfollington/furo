@@ -16,10 +16,6 @@
   "files": [
     "lib"
   ],
-  "engines": {
-    "node": "~12",
-    "npm": "~6"
-  },
   "scripts": {
     "test": "react-scripts test ",
     "build": "tsc -p tsconfig.json --outDir lib",
