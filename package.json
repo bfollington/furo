@@ -1,0 +1,15 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "scripts": {
+    "netlify": "yarn bootstrap && yarn build",
+    "build": "cd packages/furo && yarn build && cd ../example && yarn build",
+    "publish": "yarn build && lerna publish",
+    "changed": "lerna changed",
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean"
+  }
+}
