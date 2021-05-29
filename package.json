@@ -5,7 +5,7 @@
     "lerna": "^4.0.0"
   },
   "scripts": {
-    "vercel": "yarn bootstrap && yarn build",
+    "netlify": "yarn bootstrap && yarn build",
     "build": "cd packages/furo && yarn build && cd ../example && yarn build",
     "publish": "yarn build && lerna publish",
     "changed": "lerna changed",
