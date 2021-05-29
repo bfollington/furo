@@ -5,6 +5,7 @@
   },
   "license": "MIT",
   "private": true,
+  "readme": "README.md",
   "scripts": {
     "netlify": "yarn bootstrap && yarn build",
     "build": "cd packages/furo && yarn build && cd ../example && yarn build",
