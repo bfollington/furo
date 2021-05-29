@@ -15,8 +15,8 @@
 </p><br>
 
 <p align="center"><strong>Furō</strong> is a simple but powerful messaging layer for <code>React</code> applications. It can be used to tame complex asynchronous workflows and preserve sanity.
-
-[👁 &nbsp;Live Demo](https://furo.netlify.app/) (source in `packages/example`)
+  
+<p align="center"><a href="https://restack.netlify.app/">👁 &nbsp;Live Demo</a><br> (source in <code>packages/example</code>)</p>
 
 # Installation
 ```
