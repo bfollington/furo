@@ -27,6 +27,16 @@ npm i @twopm/furo
 yarn add @twopm/furo
 ```
 
+# Why furō?
+
+There are already multiple event bus libraries for React:
+
+- https://github.com/goto-bus-stop/react-bus
+- https://github.com/arkency/event-bus
+- https://github.com/fabienjuif/use-bus
+
+However, none of these allow for strongly typed messages in TypeScript or multiple event streams. Furō also provides a [debug / history tracking](https://github.com/bfollington/furo#history-tracking) system loosely inspired by [re-frame-flow](https://github.com/ertugrulcetin/re-frame-flow).
+
 # Simple Example
 
 ```tsx
