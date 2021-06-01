@@ -33,14 +33,38 @@ function genId() {
   return id
 }
 
-export function createBus<TEvent extends Event>(debug: boolean = false): Bus<TEvent> {
+const MAX_DISPATCHES = 1500
+
+export function createBus<TEvent extends Event>(
+  debug: boolean = false,
+  detectInfiniteLoop: boolean = true
+): Bus<TEvent> {
   const listeners = {} as Listeners<TEvent>
   let history: TEvent[] = []
+  let dispatchDepth = 0
+  let hasFaulted = false
+
   const clearHistory = () => {
     history.length = 0
   }
 
   function dispatch(event: TEvent, parent?: TEvent) {
+    dispatchDepth++
+
+    // keep a mutable count of how many dispatches "deep" we currently are
+    if (detectInfiniteLoop && !hasFaulted && dispatchDepth > MAX_DISPATCHES) {
+      console.error(
+        `furo encountered over ${MAX_DISPATCHES} nested dispatch calls and cancelled this dispatch. You probably didn't mean to do this and have an infinite loop, however, if this was intentional, you can disable this check by passing detectInfiniteLoop = false to createBus().`
+      )
+      console.error(`the event that triggered this error was`, event)
+      hasFaulted = true
+    }
+
+    if (hasFaulted) {
+      dispatchDepth--
+      return
+    }
+
     event._meta = event._meta || {
       id: genId(),
       children: [],
@@ -62,6 +86,7 @@ export function createBus<TEvent extends Event>(debug: boolean = false): Bus<TEv
         listener(event, (ev: TEvent) => dispatch(ev, event))
       )
     }
+    dispatchDepth--
   }
 
   return {
